@@ -14,9 +14,13 @@
     margin: 1.1rem 1rem;
     flex-direction: column;
     width: 40vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px grey;
   }
 
   .btn{
       margin-top: 20px;
       font-weight: bold;
+      border-radius: 5px;
+      box-shadow: 5px 5px 3px grey;
   }

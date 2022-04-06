@@ -1,0 +1,46 @@
+.container {
+    padding: 0 0rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+.form{
+  
+  position: absolute;
+  align-items: flex-start;
+  padding: .5rem .5rem 0 0;
+  margin: .5rem .5rem;
+  width: 25vw;
+  height: 80vh;    
+  box-shadow: 5px 0px 5px lightgray;
+  background-color: whitesmoke;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: right;
+  width: 80vw;
+  margin: .5rem 0rem .5rem 23rem;
+   
+}
+
+
+.field{
+  display: flex;
+  margin: 1.1rem 1rem 1.7rem .7rem;
+  width: 23vw;
+  border-radius: 10px;
+}
+
+.btn{
+  margin: auto;
+  margin-left: 5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 3px 2px 2px grey;
+}
+
+.switch{
+  margin: 0rem 0 0 .7rem;
+}

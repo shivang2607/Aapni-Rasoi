@@ -1,0 +1,51 @@
+.card{
+    width: 18rem;
+    margin: 2rem 1rem;
+    display: flex;
+       
+}
+
+.con{
+    background-color: rgb(242, 248, 255)
+}
+
+.media{
+    cursor: pointer;
+}
+
+.img{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    
+}
+
+.title{
+    display: -ms-flexbox;
+    cursor: pointer;
+}
+
+.ingredients{
+    margin: 1rem .25rem;
+    font-size: 0.90rem;
+    font-weight: 600;
+    color: rgb(61, 90, 124);
+  }
+    
+
+
+.ready{
+    margin: 1rem .25rem 0.25rem 0.25rem;
+    font-size: small;
+    font-weight: 500;
+    color: grey;
+    
+}
+
+.servings{
+    margin: 0.25rem;
+    font-size: small;
+    font-weight: 500;
+    color: grey;
+    
+}
