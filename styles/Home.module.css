@@ -5,7 +5,7 @@
 .main {
   min-height: 100vh;
   max-width: 100vw;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   display: flex;
   flex-wrap: wrap;
   
@@ -20,7 +20,7 @@
 .mainnav ul{
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .mainnavu2 ul{
   display: flex;
@@ -30,9 +30,12 @@
 
 .mainnav{
   display: flex;
-  max-width: 95vw;
-  margin-bottom: 25px;
-  margin-inline: auto;
+  width: 98.8vw !important;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: large;
   border-bottom: 2px solid black;
 }
 
@@ -46,13 +49,49 @@
 .mainnav ul li,.mainnavu2 ul li{
   margin: 0 25px;
   list-style-type: none;
-  font-weight: bold;
+  /* font-weight: bold; */
   cursor: pointer;
 }
 
+.banner{
 
+  min-height: 95vh;
+  justify-content: center;
+  justify-self: center;
+  background-image: url("../public/cookchef-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  /* image-resolution: inherit; */
+  width: 100vw;
+  margin-bottom: 2rem;
+}
 
+.h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  height: 6rem;
+  color: white;
+  opacity: 0.6;
+  background-color: rgb(57, 20, 158);
+  width: 100vw;
+}
 
+.h2{
+  color: white;
+  font-size: 4.5rem;
+  margin: 2rem 35vw auto 3rem;
+  font-weight: 500;
+}
+
+.s1{
+  display: flex;
+  margin: 5rem 3rem 3rem 4rem;
+  font-weight: bold;
+  justify-content: center;
+  width: 40vw;
+}
 
 .footer {
   display: flex;
@@ -149,6 +188,17 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+
+
+  .btn{
+    /* margin-top: 20px; */
+    max-height: 2rem;
+    font-weight: bold;
+    /* font-weight: bold !important; */
+    border-radius: 5px;
+    
+}
+
 
 @media (max-width: 600px) {
   .grid {

@@ -28,7 +28,7 @@
 
 .field{
   display: flex;
-  margin: 1.1rem 1rem 1.7rem .7rem;
+  margin: 1.1rem 1rem 1.7rem .7rem !important;
   width: 23vw;
   border-radius: 10px;
 }

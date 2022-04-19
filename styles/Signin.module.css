@@ -8,14 +8,25 @@
         align-items: center;
       }
   
+  .alert{
+    display: flex;
+    margin: 1.1rem 2rem !important;
+    justify-content: center;
+    width: 40vw;
+    border-radius: 10px;
+  }
   
   .field{
     display: flex;
-    margin: 1.1rem 1rem;
+    margin: 1.1rem 2rem !important;
     flex-direction: column;
     width: 40vw;
     border-radius: 10px;
-    box-shadow: 5px 5px 1px grey;
+    box-shadow: 3px 2px 3px grey;
+  }
+
+  .already{
+    margin:1rem auto;
   }
 
   .btn{

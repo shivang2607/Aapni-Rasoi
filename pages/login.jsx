@@ -1,8 +1,16 @@
 import React, { useState } from 'react'
-import { TextField, Button } from '@mui/material'
+import { TextField, Button, Alert } from '@mui/material'
+import {useRouter} from 'next/router'
+import { useAuth } from '../context/AuthContext'
 import styles from '../styles/Signin.module.css'
 
 const Login = () => {
+
+    const router = useRouter();   
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
+    const {login, currentUser} = useAuth();
+
 
     const [formData, setFormData] = useState({
         email: "",
@@ -17,18 +25,30 @@ const Login = () => {
         }))
     }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault()
                 
             console.log(formData);
+            try{
+                setLoading(true)
+               await login(formData.email, formData.password);
+               router.push('/popular');
+          
+            } catch (error){
+                setError(error.message.substr(9))
+            }
+            setLoading(false)
         
         
     }
 
   return (
     <div className={styles.signin}>
+        {error && <Alert className={styles.alert} severity="error" >{error}</Alert>}
         <TextField className={styles.field} type="email" value={formData.email} name="email" id="email" label="Email" variant="outlined" onChange={handleChange}/>
         <TextField className={styles.field} type="password" value={formData.password} name="password" id="password" label="Password" variant="outlined" onChange={handleChange}/>
+
+        {/* <div className={styles.already}>Already  Registered? <Link href="/login">Log In</Link></div> */}
 
         <Button className={styles.btn} variant="contained" onClick={handleSubmit}>LogIn</Button>
     </div>
