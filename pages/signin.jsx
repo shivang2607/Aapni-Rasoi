@@ -41,7 +41,7 @@ const Signin = () => {
                 router.push('/popular');
            
              } catch (error){
-                setError(error)
+                setError(JSON.stringify(error.code))
              }
              setLoading(false)
         

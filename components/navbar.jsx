@@ -30,7 +30,7 @@ const Navbar = () => {
             <li>Home</li>
           </Link>
           {currentUser && <Link href="/popular">
-            <li>Popular Recipy</li>
+            <li>Search Recipy</li>
           </Link>}
           <Link href="/about">
             <li>About</li>

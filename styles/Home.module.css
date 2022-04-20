@@ -1,12 +1,13 @@
 .container {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 .main {
   min-height: 100vh;
-  max-width: 100vw;
+  width: 100vw;
   /* padding: 2rem 0; */
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   
 }
@@ -31,6 +32,7 @@
 .mainnav{
   display: flex;
   width: 98.8vw !important;
+  position: fixed;
   justify-content: center;
   background-color: black;
   opacity: 0.8;
@@ -55,7 +57,7 @@
 
 .banner{
 
-  min-height: 95vh;
+  height: 100vh;
   justify-content: center;
   justify-self: center;
   background-image: url("../public/cookchef-banner.jpg");
@@ -81,7 +83,7 @@
 .h2{
   color: white;
   font-size: 4.5rem;
-  margin: 2rem 35vw auto 3rem;
+  margin: 4rem 35vw auto 3rem;
   font-weight: 500;
 }
 
