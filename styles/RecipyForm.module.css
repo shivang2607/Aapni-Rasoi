@@ -9,7 +9,7 @@
   position: absolute;
   align-items: flex-start;
   padding: .5rem .5rem 0 0;
-  margin: .5rem .5rem;
+  margin: 7rem .5rem;
   width: 25vw;
   height: 80vh;    
   box-shadow: 5px 0px 5px lightgray;
@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   justify-self: right;
   width: 80vw;
-  margin: .5rem 0rem .5rem 23rem;
+  margin: 5rem 0rem .5rem 23rem;
    
 }
 
