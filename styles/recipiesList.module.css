@@ -16,9 +16,9 @@
 .img{
     display: flex;
     justify-content: flex-end;
-    cursor: pointer;
     
 }
+
 
 .title{
     display: -ms-flexbox;
@@ -32,7 +32,11 @@
     color: rgb(61, 90, 124);
   }
     
-
+.fav{
+    display: flex;
+    width: 15rem;
+    justify-content: left;
+}
 
 .ready{
     margin: 1rem .25rem 0.25rem 0.25rem;

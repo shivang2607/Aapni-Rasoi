@@ -21,17 +21,22 @@
 .mainnav ul{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin: 0.51rem;
+  padding-left: 0;
 }
 .mainnavu2 ul{
   display: flex;
   justify-content: right;
+  margin: 0.51rem;
   /* margin-top: 50px; */
 }
 
 .mainnav{
   display: flex;
   width: 100vw !important;
+  max-height: 5.5rem;
+  min-height: 4rem;
   position: fixed;
   justify-content: center;
   background-color: black;
@@ -50,12 +55,20 @@
   margin-right: 2rem;
 }
 
+.h5{
+  font-size: large;
+  color: white;
+}
+
+
 .mainnav ul li,.mainnavu2 ul li{
-  margin: 0 25px;
+  margin: 0 15px;
   list-style-type: none;
+  justify-content: center;
   /* font-weight: bold; */
   cursor: pointer;
 }
+
 
 .banner{
 
@@ -85,7 +98,7 @@
 .h2{
   color: white;
   font-size: 4.5rem;
-  margin: 4rem 35vw auto 3rem;
+  margin: 7rem 35vw auto 3rem;
   font-weight: 500;
 }
 
@@ -203,6 +216,74 @@
     
 }
 
+
+.fav{
+  display: flex;
+  width: 100vw;
+  margin-top: 3rem ;
+  flex-wrap: wrap;
+}
+
+.favh1{
+  display: flex;
+  margin: 6rem 0rem 0rem 2rem;
+  /* width: 100vw; */
+  justify-self: center;
+}
+
+.about{
+  font-size: large;
+  font-style: inherit;
+  padding: 3rem;
+  font-stretch: 150%;
+  font-weight: 350;
+  box-shadow: 3px 2px 5px grey;
+  border-radius: 2px ;
+  margin: 6rem 2rem 2rem 2rem;
+}
+
+.contact{
+  
+  padding: 3rem;
+  /* display: flex; */
+  width: 80vw;
+  justify-content: center;
+  box-shadow: 3px 2px 5px grey;
+  border-radius: 2px ;
+  margin: 6rem 2rem 2rem 2rem;
+}
+
+.image{
+  width: 12vw;
+  border-radius:50%;
+  justify-content: center;
+   overflow: 'hidden';
+   /* margin-inline: auto; */
+}
+
+.conh5{
+  display: flex;
+  width: 30vw;
+  /* margin: auto; */
+}
+
+.info{
+  display: flex;
+  width: 75vw;
+  margin: 0rem 0 5rem 0;
+  /* justify-content: center; */
+}
+
+.name{
+  width: 15vw;
+  font-size: larger;
+  font-weight: 550;
+}
+
+.contactinfo{
+  margin-left: 8rem;
+  font-size: large;
+}
 
 @media (max-width: 600px) {
   .grid {

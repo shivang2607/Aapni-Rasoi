@@ -1,6 +1,6 @@
-
 import { initializeApp } from "firebase/app";
-import {getAuth} from 'firebase/auth'
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDZc8Ulfujxu3YGUrWY_UGgZtVQmXQtDac",
@@ -8,10 +8,11 @@ const firebaseConfig = {
   projectId: "cookchef-bd9b4",
   storageBucket: "cookchef-bd9b4.appspot.com",
   messagingSenderId: "717690880923",
-  appId: "1:717690880923:web:ffd9a38f4040e4669d173e"
+  appId: "1:717690880923:web:ffd9a38f4040e4669d173e",
 };
 
-
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app)
-// export default app
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+export { auth, db };

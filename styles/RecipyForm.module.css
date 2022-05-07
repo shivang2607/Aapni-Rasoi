@@ -16,7 +16,7 @@
   background-color: whitesmoke;
 }
 
-.content{
+.content{ 
   display: flex;
   flex-wrap: wrap;
   justify-self: right;
